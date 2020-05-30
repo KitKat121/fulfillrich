@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <title>Fulfill Rich</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- Preformated Bootstrap CSS- Copyright to the owners and authors of these files-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ <!-- Preformated Boostrap JS-Copyright to the owners and authors of these files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+    function openTab(tabName) {
+      var i, x;
+      x = document.getElementsByClassName("containerTab");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(tabName).style.display = "block";
+    }
+    </script>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: black;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.step {
+    background-image: url('/images/bck.jpg');
+    color: white;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+    </style>
+    </head>
+    <body>
+        <header>
+            <h1>
+              <button><a href="/index.html"><img src="/images/logo.png" width="60px" height="62px"></a></button>
+                COOKING, is working-out!
+            </h1>
+        </header>
+        <div>
+          <nav style="background-image: url('/images/bck.jpg'); background-size: cover;">
+            <h2 style="text-align: center; color: white; text-shadow: 2px 2px #0b4dc9; text-decoration-color: black;">MBINZO- simple</h2>
+            </nav>
+            <p style="color: black; text-align: center;">follow to reach your tatsebuds desire:</p>
+          </div>
+          
+          <!-- Three columns -->
+          <div class="row">
+            <div class="column" onclick="openTab('b1');" style="background:#d65d0d;">
+              Step 1- WASH
+            </div>
+            <div class="column" onclick="openTab('b2');" style="background:#d65d0d;">
+              Step 2- FRY
+            </div>
+            <div class="column" onclick="openTab('b3');" style="background:#d65d0d;">
+              Step 3- EAT
+            </div>
+          </div>
+          
+          <!-- Full-width columns: (hidden by default) -->
+          <div id="b1" class="containerTab" style="display:none;background:white">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <h3>Mbinzo are smoked! </h3>
+            <p>From the tree that they are found, Mbinzo are smoked directly. Hence why it is very IMPORTANT TO WASH IT THROUGHLY- at least 3 rinse with water. For best texture result, leave to soak overnight in cold water.</p>
+          </div>
+          
+          <div id="b2" class="containerTab" style="display:none;background:white">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <h3>Oil is not all bad FAT!</h3>
+            <p>Pour a tablespoon of vegetable oil <i>(or oil to your preference)</i> to your frying pan, let it heat for 2 minutes. Once hot, drain the water from your <b>mbinzo</b> then pour directly into the hot oil. stir, then all your seasoning <i>(list below)</i></p>
+          </div>
+          
+          <div id="b3" class="containerTab" style="display:none;background:white">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <h2>Is that it!? <b>yummy</b></h2>
+            <p>let your <b>mbinzo</b> steamer on low heat for 10 mins <i>(time depends on whether your <b>fulfill rich</b> ingredient was soaked overnight. if not cook for longer till tender</i>); then is ready to serve!</p>
+            <p>it should look like this<i>( at least something like this!)</i>:</p>
+            <img src="images/cookmbinzo.jpeg" alt="cookmbinzo" width="300" height="300">    
+        </div>
+          <br>
+          <div> <p>For some of us that text is a bit <b>too 'wordy', <a href="https://www.youtube.com/watch?v=0Sj4OyouTTc" target="_blank"><b>CLICK</b></a> for a visual compilation</b></p></div>
+          <br>
+          <br>   <br>
+          <br>
+          <br>  
+          <br>  
+          <br>  
+          <br>  
+
+          
+          
+          <div style="text-align:center">
+            <h2>MBINZO- simple</h2>
+            <p>follow to reach your tatsebuds desire:</p>
+          </div>
+          
+          <!-- Three columns -->
+          <div class="row">
+            <div class="column" onclick="openTab('b1');" style="background:red;">
+              Step 1- WASH
+            </div>
+            <div class="column" onclick="openTab('b2');" style="background:blue;">
+              Step 2- FRY
+            </div>
+            <div class="column" onclick="openTab('b3');" style="background:green;">
+              Step 3- EAT
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <!-- Full-width columns: (hidden by default) -->
+          <div id="b1" class="containerTab" style="display:none;background:white">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <h3>Mbinzo are smoked! </h3>
+            <p>From the tree that they are found, Mbinzo are smoked directly. Hence why it is very IMPORTANT TO WASH IT THROUGHLY- at least 3 rinse with water. For best texture result, leave to soak overnight in cold water.</p>
+          </div>
+          
+          <div id="b2" class="containerTab" style="display:none;background:white">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <h3>Oil is not all bad FAT!</h3>
+            <p>Pour a tablespoon of vegetable oil <i>(or oil to your preference)</i> to your frying pan, let it heat for 2 minutes. Once hot, drain the water from your <b>mbinzo</b> then pour directly into the hot oil. stir, then all your seasoning <i>(list below)</i></p>
+          </div>
+          
+          <div id="b3" class="containerTab" style="display:none;background:white">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <h2>Is that it!? <b>yummy</b></h2>
+            <p>let your <b>mbinzo</b> steamer on low heat for 10 mins <i>(time depends on whether your <b>fulfill rich</b> ingredient was soaked overnight. if not cook for longer till tender</i>); then is ready to serve!</p>
+          </div>
+          <div> <p>For some of us that text is a bit <b>too 'wordy', <button>click here</button> fo a visual compilation</b></p></div>
+
+        </body>
+    </html>
