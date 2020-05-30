@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <title>Fulfill Rich</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- Preformated Bootstrap CSS- Copyright to the owners and authors of these files-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ <!--logo as favicon-->
+<link rel="icon" href="/images/logo.ico">
+ <!-- Preformated Boostrap JS-Copyright to the owners and authors of these files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.bg {
+  /* The image used */
+  background-image: url('/images/market.jpeg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #d65d0d;
+  height: 100px;
+}
+
+/* Navbar links */
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  background-image: url('/images/bck.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+#navbar a:hover{
+    color: red;
+}
+
+/* Page content */
+.content-landing{
+  padding: 100px 16px 16px 16px
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+
+
+</style>
+
+</head>
+<body>
+<nav class="sticky">
+    <div id="navbar">
+        <button><a href="#targethome"><img src="/images/logo.png" width="60px" height="62px"></button></a>
+        <a href="/recipes.html">TAKE PART</a>
+        <a href="#targetingredient">INGREDIENT</a>
+        <a href="#targethome">ABOUT</a>
+      </div>
+</nav>
+
+    <div id="targethome" class="content-landing"><!--1st section for about/homepage-->
+          <h2 style="text-decoration: underline;">ABOUT us</h2>
+          <div style="float: right;"><iframe width="350" height="245" src="https://www.youtube.com/embed/L7FV88rdzz0" frameborder="30px"    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+          <p><b>Fulfill Rich (F-R)</b> allows you to discover more than your usual supermarket ingredient. 
+            Recent assessments of the potential of large-scale entomophagy (eating insects) 
+            have led some experts to suggest insects as a potential alternative protein 
+            source to conventional livestock (beef, lamb, goat etc), 
+            citing possible benefits including greater efficiency, lower resource use, increased food security, 
+            and environmental and economic sustainability.</p>
+<p>Its founder (Mrs Efunsile) originates from D.R.Congo. A land that holds more than 8 million habitant,
+   <b>Liaka Bien!</b> (the company slogan, in English: eat well!) is crucial to survive. She was inspired by 
+   the fact that eating in her homeland is a journey of discovering, especially with insects. 
+   More than 50 recipes have been passed on from generations to generations, <b>promoting a nutritious eating</b>
+    at a low cost.</p> 
+            
+            <p>The combination of knowledge and traditional cooking skills, 
+              will ensure that your visit to our site will in crave and enrich your cooking skills. 
+              From cooking on charcoal to steaming using banana leaves, or simply using frying pan, <b>F-R</b> 
+              wants you to be a part of it all, come and be part of our <i>borderless land of taste</i></p>
+    </div>
+    <div id="targetingredient" class="content-landing"><!--2nd for ingredient where you can select main ingredient to then follow cooking instructions-->      
+      <h2 style="text-decoration: underline;">INGREDIENT</h2>
+            <p>we call them <b>FULFILL RICH beast</b></p>
+            <div class="clearfix">
+              <h2>MBINZO</h2>
+                <div class="img-container">
+                <img src="/images/mbinzo1.png" alt="mbinzo1" style="width:50%">
+                <button onclick="this.innerHTML ='in 100g= 53g of proteins, 17g of carbohydrates and only 15g of fat only !'">click for nutrient <b>FACT</b></button>
+                </div>
+              
+                <h2>MAKELELE</h2>
+                <div class="img-container">
+                <img src="/images/makelele1.png" alt="makelele1" style="width:50%">
+                <button onclick="this.innerHTML ='in 100g= 171mg of calcuim, 8.7mg of iron and 4.41mg of fiber!'">click for nutrient <b>FACT</b></button>
+                </div>
+              
+                <h2>MPOSE</h2>
+                <div class="img-container">
+                <img src="/images/mpose1.png" alt="mpose1" style="width:50%">
+                <button onclick="this.innerHTML ='coming soon!'">click for nutrient <b>FACT</b></button>
+                </div>
+              </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="footer">
+      <footer>
+        <ul style="text-align: center; list-style-type: none;">
+          <li>&#169; <b>Liake Bien!</b> F-R 2020</li>
+        </ul>
+      </footer>  
+    </div>
+
+</body>
+</html>
